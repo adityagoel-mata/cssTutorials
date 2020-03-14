@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript">
+  function validate(){
+    var Username = document.getElementById('uname');
+    var Password = document.getElementById('pass');
+//    var lbl = document.getElementById('lblbtn');
+    if (Username.value.trim()=="" || Password.value.trim()==""){
+      alert('Empty entries');
+
+      document.getElementById('label').style.display="inline";
+      Username.style.border='solid 3px red';
+    
+    return false;
+  }
+  else {
+    return true;
+  }
+  }
+</script>
+<body>
+  <form onsubmit="return validate()" action ="message.html">
+    <input type="text" id="uname" placeholder="Username">
+    <label id='label' style="color:red;" visibility: hidden> Invalid </label> <br>
+    <input type="password" id="pass" placeholder="Password"> <br>
+    <button type="submit">Submit</button>
+
+  </form>
+</body>
+</html>

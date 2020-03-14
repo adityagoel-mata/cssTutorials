@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript">
+  function fn1(){
+
+    var rd1 = document.getElementById("rad1");
+    var rd2 = document.getElementById("rad2");
+
+    if (rd1.checked==true){
+      alert(rd1.value + ' lived in E-127');
+    }
+    else if (rd2.checked==true){
+      alert(rd2.value + ' Lived in E-129');
+    }
+    else {
+      alert('No option is Selected');
+    }
+  }
+
+</script>
+
+<body>
+  <input type="radio" name="grp1" id='rad1' value="So"> Sowill </input><br>
+  <input type="radio" name="grp1" id='rad2' value="Ma"> Mata </input><br>
+  <button id='btn1' onclick="fn1()"> Which room? </button>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript">
+  
+  function fn1(){
+    var name = document.getElementById('selectBox');
+    alert(name.options[name.selectedIndex].value + ' lives in Emiet hostel');
+  }
+
+</script>
+<body>
+  <select id='selectBox'>
+    <option value="Aditya">Aditya</option>
+    <option value="Sowill">Sowill</option>
+    <option value="Mayuresh">Mayuresh</option>
+  </select> <br>
+  <button onclick="fn1()">Which Hostel</button>
+
+</body>
+</html>

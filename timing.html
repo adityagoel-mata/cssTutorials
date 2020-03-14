@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<script type="text/javascript">
+  var ID=0;
+  var seconds = 0;
+  function printMsg(){
+    document.getElementById('op').innerHTML = seconds + 'seconds';
+    seconds++;
+  }
+  function start(){
+    //ID=window.setTimeout(printMsg, 5000);
+    ID=window.setInterval(printMsg, 1000);
+  }
+  function stop(){
+    //window.clearTimeout(ID);
+    window.clearInterval(ID);
+  }
+</script>
+<body>
+  <button onclick="start()"> start</button> <br>
+  <h1 id="op"> Text </h1> <br>
+  <button onclick="stop()"> Stop</button>
+</body>
+</html>
